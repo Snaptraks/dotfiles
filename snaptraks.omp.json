@@ -13,7 +13,6 @@
           },
           "style": "diamond",
           "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}  ",
-          // "trailing_diamond": "\ue0b0",
           "type": "os"
         },
         {
