@@ -71,13 +71,12 @@
           "foreground": "#d6deeb",
           "leading_diamond": "<transparent,#575656>\ue0b0</>",
           "properties": {
-            "style": "roundrock",
-            "threshold": 0
+            "time_format": "15:04:05"
           },
           "style": "diamond",
-          "template": " {{ .FormattedMs }}",
+          "template": " \ue641 {{ .CurrentDate | date .Format }}",
           "trailing_diamond": "\ue0b4",
-          "type": "executiontime"
+          "type": "time"
         }
       ],
       "type": "prompt"
@@ -367,12 +366,13 @@
           "foreground": "#d6deeb",
           "leading_diamond": "<transparent,#234d70>\ue0b0</>",
           "properties": {
-            "time_format": "15:04:05"
+            "style": "roundrock",
+            "threshold": 0
           },
           "style": "diamond",
-          "template": " \ue641 {{ .CurrentDate | date .Format }}",
+          "template": " {{ .FormattedMs }}",
           "trailing_diamond": "\ue0b4",
-          "type": "time"
+          "type": "executiontime"
         }
       ],
       "type": "prompt"
