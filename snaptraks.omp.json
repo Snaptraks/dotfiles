@@ -102,6 +102,15 @@
           "type": "shell"
         },
         {
+          "background": "#1d63ed",
+          "foreground": "#e5f2fc",
+          "style": "diamond",
+          "leading_diamond": "<transparent,#1d63ed>\ue0b0</>",
+          "template": " \uf308 {{ .Context }} ",
+          "trailing_diamond": "\ue0b0",
+          "type": "docker"
+        },
+        {
           "background": "#ffffff",
           "foreground": "#ce092f",
           "leading_diamond": "<transparent,#ffffff>\ue0b0</>",
